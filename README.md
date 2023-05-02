@@ -11,7 +11,25 @@ The main issues in Container platforms are :
 Kubernetes Architecture:-
 Kubernetes is based on Master(control plane) and Worker node(Data plane) cluster.As the name suggest master node controls all the cluster and it;s the worker nodes who actually do the work and host the Pods.
 The smallest identity in K8 is Pod ( In docker the smallest identity is container)
-Pod :- container wrapped with few other things is pod 
-<img width="329" alt="image" src="https://user-images.githubusercontent.com/106343663/235786599-23a7e0e1-4ef6-4b33-9644-8f822425a04f.png">
+
+Architecture:-
+<img width="292" alt="image" src="https://user-images.githubusercontent.com/106343663/235788363-32e0a810-921e-47c4-b682-faac124348f7.png">
+
+Kubernetes worker node(data plane) has:-
+ -pod :-Container wrapped in something else too
+ -kubelet running:-responsible for pod running
+ -Kubeproxy :-provides networking,IP and default load balancing
+ -container runtime:-is responsible for container to run.
+   ( K8 we can use containerd etc)
+   
+Kubernetes master node(control pane) has :-
+ -API server:- Entry point for K8 cluster
+ -Scheduler:- acts on scheduling
+ -Controller Manager:- manages controllers.(ex:-replica sets controllers)
+    (cloud controller manager also there:-used when k8 is deployed in EKS/AKS etc )
+ -etcd:-Key value storage.Storage current value of entire cluster.Backup etc stored
+
+
+
 
 
