@@ -33,7 +33,7 @@ Kubernetes master node(control pane) has :-
         (cloud controller manager also there:-used when k8 is deployed in EKS/AKS etc )                       
    -etcd:-Key value storage.Storage current value of entire cluster.Backup etc stored
     
-
+(Reference:- https://youtu.be/gywke3XiNC0 )
 
 
 
