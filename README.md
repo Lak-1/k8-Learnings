@@ -1,2 +1,3 @@
-# k8-Learnings
-My K8 learnings repository
+This repository is created as part of mu Kubernetes learning journey.
+Kubernetes Architecture:-
+
